@@ -1,0 +1,247 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.336);
+  backdrop-filter: blur(48px) saturate(180%) brightness(1.15);
+  -webkit-backdrop-filter: blur(48px) saturate(180%) brightness(1.15);
+  border: 2px solid #ffffff8a;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 12px 32px 0 rgba(0, 0, 0, 0.10);
+  color: #00ccff;
+  font-weight: bold;
+  font-size: medium;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88vw;
+  max-width: 1400px;
+  height: 60px;
+  z-index: 1000;
+  padding: 0px 2px 0px 10px;
+  transition: background 0.3s, box-shadow 0.3s, top 0.3s;
+}
+
+.navLogo {
+  color: var(--secondary-text-color);
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navLogo:hover {
+  color: var(--dark-bg-color);
+}
+
+.navMenu {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 0;
+}
+
+.navList>li {
+  position: relative;
+}
+
+.navLink {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1;
+
+  font-size: large;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  transition: color 0.3s ease, background 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navLink:hover {
+  color: var(--dark-bg-color);
+  opacity: 1;
+  border-bottom: 2px solid #0066ff;
+  background: rgba(92, 152, 241, 0.07);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Active section highlight */
+.navLinkActive {
+  color: var(--dark-bg-color);
+  border-bottom: 2px solid #0066ff;
+  background: rgba(92, 152, 241, 0.10);
+  border-radius: 4px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.navToggle,
+.navClose {
+  display: none;
+  background: none;
+  color: var(--secondary-text-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.darkModeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.darkModeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.darkModeIcon {
+  font-size: 25px;
+  transition: color 0.3s ease;
+  margin: 0 0 0 10px;
+  padding: 0;
+  padding-bottom: 5px;
+  color: var(--secondary-text-color);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.darkModeIcon:hover {
+  color: #000a91;
+  animation: rotate 0.5s linear;
+}
+
+/* sun hover */
+.darkModeIcon:global(.fas.fa-sun):hover {
+  background: linear-gradient(135deg, #ff0000, #ffbb00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+/* moon hover */
+.darkModeIcon:global(.fas.fa-moon):hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+:global(.dark-mode) .darkModeIcon {
+  color: #ffffff;
+}
+
+/* Utilities — .active is used as a modifier in compound selectors below */
+/* stylelint-disable-next-line block-no-empty */
+/* .active {} */
+
+/* Mobile nav (moved from responsive.css so it's scoped) */
+@media screen and (max-width: 857px) {
+
+  .navToggle,
+  .navClose {
+    position: absolute;
+    font-size: 35px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
+  .navToggle {
+    display: block;
+  }
+
+  .navClose.active {
+    display: block;
+  }
+
+  .navToggle.active {
+    display: none;
+  }
+
+  .navMenu.active {
+    right: 0;
+  }
+
+  .navMenu {
+    width: 70vw;
+    max-width: 400px;
+    position: fixed;
+    top: 10vh;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 140, 255);
+    backdrop-filter: blur(48px) saturate(180%) brightness(1.15);
+    -webkit-backdrop-filter: blur(48px) saturate(180%) brightness(1.15);
+    border-radius: 30px;
+    box-shadow: 0 16px 48px 0 rgba(0, 183, 255, 0.25), 0 24px 64px 0 rgba(0, 0, 0, 0.18);
+    opacity: 0.98;
+    z-index: 100;
+    justify-content: flex-start;
+    align-items: stretch;
+    transition: right 0.7s cubic-bezier(.77, 0, .18, 1), background 0.3s, box-shadow 0.3s;
+    overflow-y: auto;
+    border: 3px solid #0044ff;
+    color: white;
+  }
+
+  .navMenu .navList {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    list-style-type: none;
+    text-align: center;
+    justify-content: flex-start;
+    row-gap: 50px;
+    width: 100%;
+  }
+
+  .navLink {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .darkModeContainer {
+    position: absolute;
+    right: 80px;
+  }
+
+  .darkModeIcon {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+}
