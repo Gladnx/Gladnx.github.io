@@ -43,7 +43,7 @@
 .navList {
   list-style: none;
   display: flex;
-  gap: 0;
+  gap: 6px;
 }
 
 .navList>li {
@@ -51,6 +51,9 @@
 }
 
 .navLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   border-bottom: 2px solid transparent;
