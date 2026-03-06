@@ -8,7 +8,8 @@ function scrollToId(id) {
   if (!target) return
   const navbar = document.querySelector('nav')
   const navHeight = navbar ? navbar.offsetHeight : 0
-  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 10
+  const extraTopGap = 50
+  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - extraTopGap
   window.scrollTo({ top: targetPosition, behavior: 'smooth' })
 }
 

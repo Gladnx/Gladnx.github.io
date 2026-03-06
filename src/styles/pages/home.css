@@ -430,6 +430,7 @@ body.dark-mode .skill-chip {
     margin-bottom: -50px;
     position: relative;
     z-index: 2;
+    border: #000000 solid 2px;
 }
 
 .project-item:hover .project-image {
@@ -444,7 +445,7 @@ body.dark-mode .skill-chip {
 
 .project-item p {
     flex: 1;
-    line-height: 1.5;
+    font-size: 0.9em ;
 }
 
 .project-item:hover p,
@@ -459,12 +460,11 @@ body.dark-mode .skill-chip {
 .project-skills-btn {
     display: inline-block;
     margin: 5px 5px 0 0;
-    padding: 5px 10px;
     background: #0044ff;
     color: #ffffff;
     font-weight: bold;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -474,8 +474,9 @@ body.dark-mode .skill-chip {
 }
 
 .project-skill-icon {
-    width: 34px;
-    height: 34px;
+    position: relative;
+    width: 30px;
+    height: 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -483,12 +484,35 @@ body.dark-mode .skill-chip {
     line-height: 1;
 }
 
+.project-skill-tooltip {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%);
+    background: var(--bg-color);
+    color: var(--secondary-text-color);
+    border: 1px solid var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 4px 8px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.project-skill-icon:hover .project-skill-tooltip {
+    opacity: 1;
+}
+
 .project-item .button-container,
 .other-projects-container .button-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     gap: 20px;
 }
 
@@ -525,6 +549,7 @@ body.dark-mode .skill-chip {
     text-decoration: none;
     background-color: var(--secondary-text-color);
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2.5px solid transparent;
 }
 
 .learn-more-btn:hover {

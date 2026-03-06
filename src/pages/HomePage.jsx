@@ -104,18 +104,21 @@ export default function HomePage() {
       },
       {
         id: 2,
-        title: 'Smart Personal Finance Dashboard',
+        title: 'AI software to detect harmful ingredients in packaged food products and beverages',
         description:
-          'Built a dashboard to clean transaction data, summarize spending behavior, and flag unusual activity with category-level insights and reporting.',
-        github: 'https://github.com/Gladnx',
-        website: 'https://your-project2-demo-link.com',
+          'AI Software to Identify Harmful Ingredients in Packaged Food Items and Beverages is an intelligent application that helps consumers make healthier food choices by analysing ingredient labels from packaged products. The system uses Optical Character Recognition (OCR) to automatically extract ingredient text from product labels to identify potentially harmful additives, preservatives, and allergens commonly found in processed foods and beverages providing insights about their potential health effects.',
+        github: 'https://github.com/Gladnx/AI-software-to-identify-harmful-ingredients-in-packaged-food-items-and-beverages.git',
         learnMore: '/projects/project-2',
-        image: '/images/sample-project-image.jpg',
+        image: '/public/images/project details images/project2/project2.png',
         skills: [
-          { name: 'React', Icon: SiReact },
+          { name: 'HTML', Icon: SiHtml5 },
+          { name: 'CSS', Icon: SiCss },
+          { name: 'JavaScript', Icon: SiJavascript },
+          { name: 'Python', Icon: SiPython },
+          { name: 'SQL', Icon: SiMysql },
           { name: 'Flask', Icon: SiFlask },
-          { name: 'MySQL', Icon: SiMysql },
-          { name: 'Pandas', Icon: SiPandas }
+          { name: 'GitHub', Icon: SiGithub }
+
         ]
       },
       {
@@ -358,10 +361,10 @@ export default function HomePage() {
                       <span
                         key={tech.name}
                         className="project-skills-btn project-skill-icon"
-                        title={tech.name}
                         aria-label={tech.name}
                       >
                         <tech.Icon aria-hidden="true" />
+                        <span className="project-skill-tooltip">{tech.name}</span>
                       </span>
                     ))}
                   </div>
