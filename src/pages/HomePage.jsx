@@ -109,7 +109,7 @@ export default function HomePage() {
           'AI Software to Identify Harmful Ingredients in Packaged Food Items and Beverages is an intelligent application that helps consumers make healthier food choices by analysing ingredient labels from packaged products. The system uses Optical Character Recognition (OCR) to automatically extract ingredient text from product labels to identify potentially harmful additives, preservatives, and allergens commonly found in processed foods and beverages providing insights about their potential health effects.',
         github: 'https://github.com/Gladnx/AI-software-to-identify-harmful-ingredients-in-packaged-food-items-and-beverages.git',
         learnMore: '/projects/project-2',
-        image: '/public/images/project details images/project2/project2.png',
+        image: '/images/project details images/project2/project2.png',
         skills: [
           { name: 'HTML', Icon: SiHtml5 },
           { name: 'CSS', Icon: SiCss },
