@@ -178,13 +178,18 @@ export default function HomePage() {
           <div className="aboutme-text">
             <h2>About Me</h2>
             <p>
-              I'm Gladwin George, a passionate Data and AI Enthusiast dedicated to transforming raw data into actionable
-              insights and innovative solutions. With a strong foundation in programming, data visualization, and machine
-              learning, I thrive on uncovering patterns, solving problems, and driving impactful decisions through data.
+              I’m Gladwin George, an<span className="aboutme-highlight"> MSc Artificial Intelligence</span> student at <span className="aboutme-highlight">Lancaster University</span>, and a BTech graduate from SAGE University, Indore (India). I am passionate about solving real-world problems and exploring innovative ways to use Generative AI to make technology more helpful, accessible, and enjoyable. <br /> 
+
+              My interests lie in <span className="aboutme-highlight">Intelligent systems</span>, <span className="aboutme-highlight">AI-driven applications</span>, and <span className="aboutme-highlight">practical problem solving</span>, where technology can meaningfully improve everyday experiences. I enjoy building solutions that combine creativity with technical thinking, particularly in areas involving data, machine learning, and modern development tools. <br />
+
+              Alongside my studies, I volunteer at the <span className="aboutme-highlight">British Heart Foundation</span>, where I support community-driven initiatives and gain valuable experience working with diverse teams while contributing to meaningful social impact.
             </p>
 
             <a href="/files/Gladwin George Resume.pdf" className="btn" download>
               Resume
+            </a>
+            <a href="#contact" className="btn secondary-btn">
+              Contact
             </a>
           </div>
         </div>
