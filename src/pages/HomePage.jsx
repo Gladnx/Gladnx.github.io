@@ -1,6 +1,35 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
+import {
+  SiAnaconda,
+  SiCss,
+  SiDocker,
+  SiFlask,
+  SiGit,
+  SiGithub,
+  SiGitlab,
+  SiGooglecolab,
+  SiHtml5,
+  SiJavascript,
+  SiMysql,
+  SiNodedotjs,
+  SiNumpy,
+  SiOpenjdk,
+  SiPandas,
+  SiPlotly,
+  SiPostman,
+  SiReact,
+  SiScikitlearn,
+  SiStreamlit,
+  SiTailwindcss,
+  SiTensorflow,
+  SiJupyter,
+  SiApachespark,
+  SiPython
+} from 'react-icons/si'
+import { PiMicrosoftExcelLogoFill } from 'react-icons/pi'
+
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import GoUpButton from '../components/GoUpButton.jsx'
@@ -199,20 +228,58 @@ export default function HomePage() {
         <h2 className="shrinkInAndOut">Skills</h2>
         <div className="skills-container">
           {[
-            { img: '/images/icons/excel.png', label: 'EXCEL' },
-            { img: '/images/icons/html.png', label: 'HTML' },
-            { img: '/images/icons/css.png', label: 'CSS' },
-            { img: '/images/icons/python.png', label: 'PYTHON' },
-            { img: '/images/icons/sql.png', label: 'SQL' },
-            { img: '/images/icons/power-bi-icon.png', label: 'POWER BI' },
-            { img: '/images/icons/flask.png', label: 'FLASK' },
-            { img: '/images/icons/github.png', label: 'GITHUB' }
+            {
+              title: 'Programming & Development',
+              items: [
+                { name: 'Python', Icon: SiPython },
+                { name: 'Java', Icon: SiOpenjdk },
+                { name: 'JavaScript', Icon: SiJavascript },
+                { name: 'HTML', Icon: SiHtml5 },
+                { name: 'CSS', Icon: SiCss },
+                { name: 'React', Icon: SiReact },
+                { name: 'Tailwind CSS', Icon: SiTailwindcss },
+                { name: 'Node.js', Icon: SiNodedotjs },
+                { name: 'Flask', Icon: SiFlask },
+                { name: 'MySQL', Icon: SiMysql }
+              ]
+            },
+            {
+              title: 'Data Science & Machine Learning',
+              items: [
+                { name: 'Excel', Icon: PiMicrosoftExcelLogoFill },
+                { name: 'NumPy', Icon: SiNumpy },
+                { name: 'Pandas', Icon: SiPandas },
+                { name: 'Scikit-learn', Icon: SiScikitlearn },
+                { name: 'TensorFlow', Icon: SiTensorflow },
+                { name: 'Matplotlib', Icon: SiPlotly },
+                { name: 'Apache Spark', Icon: SiApachespark },
+                { name: 'Streamlit', Icon: SiStreamlit },
+                { name: 'Jupyter Notebook', Icon: SiJupyter },
+                { name: 'Google Colab', Icon: SiGooglecolab }
+              ]
+            },
+            {
+              title: 'Tools & DevOps',
+              items: [
+                { name: 'Git', Icon: SiGit },
+                { name: 'GitHub', Icon: SiGithub },
+                { name: 'GitLab', Icon: SiGitlab },
+                { name: 'Docker', Icon: SiDocker },
+                { name: 'Anaconda', Icon: SiAnaconda },
+                { name: 'Postman', Icon: SiPostman }
+              ]
+            }
           ].map((s) => (
-            <div className="skill" key={s.label}>
-              <div className="skill-icon">
-                <img src={s.img} alt={s.label} />
+            <div className="skill skill-card" key={s.title}>
+              <h3>{s.title}</h3>
+              <div className="skill-icons">
+                {s.items.map((item, idx) => (
+                  <div className="skill-chip" key={`${item.name}-${idx}`}>
+                    <item.Icon aria-hidden="true" />
+                    <span className="skill-tooltip">{item.name}</span>
+                  </div>
+                ))}
               </div>
-              <p>{s.label}</p>
             </div>
           ))}
         </div>
