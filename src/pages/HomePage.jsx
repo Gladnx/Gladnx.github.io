@@ -85,21 +85,75 @@ export default function HomePage() {
     return () => observer.disconnect()
   }, [])
 
+    const topProjects = useMemo(
+    () => [
+      {
+        id: 1,
+        title: 'AI-Enabled Onion Storage Grading System',
+        description:
+          'Designed an electromechanical + AI workflow to grade onion quality and support better storage decisions, reducing spoilage risk and post-harvest loss.',
+        github: 'https://github.com/yourusername/project1',
+        website: 'https://your-project1-demo-link.com',
+        learnMore: '/projects/project-1',
+        image: '/images/sample-project-image.jpg',
+        skills: [
+          { name: 'Python', Icon: SiPython },
+          { name: 'OpenCV / CV', Icon: SiJupyter },
+          { name: 'TensorFlow', Icon: SiTensorflow }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Smart Personal Finance Dashboard',
+        description:
+          'Built a dashboard to clean transaction data, summarize spending behavior, and flag unusual activity with category-level insights and reporting.',
+        github: 'https://github.com/yourusername/project2',
+        website: 'https://your-project2-demo-link.com',
+        learnMore: '/projects/project-2',
+        image: '/images/sample-project-image.jpg',
+        skills: [
+          { name: 'React', Icon: SiReact },
+          { name: 'Flask', Icon: SiFlask },
+          { name: 'MySQL', Icon: SiMysql },
+          { name: 'Pandas', Icon: SiPandas }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Product Recommender (Similarity Search)',
+        description:
+          'Implemented a similarity-search recommender using vector representations and ANN indexing concepts to retrieve related products with low latency.',
+        github: 'https://github.com/yourusername/project3',
+        learnMore: '/projects/project-3',
+        image: '/images/sample-project-image.jpg',
+        skills: [
+          { name: 'Python', Icon: SiPython },
+          { name: 'NumPy', Icon: SiNumpy },
+          { name: 'Scikit-learn', Icon: SiScikitlearn }
+        ]
+      }
+    ],
+    []
+  )
+
   const otherProjects = useMemo(
     () => [
       {
         titleTop: 'PROJECT 4',
         category: 'data-analysis',
         img: '/images/image.png',
-        title: 'Project 4 — Sales Performance Analysis',
+        title: 'Sales Performance Analysis',
+        description: 'Analyzed sales trends by region and product line to identify growth opportunities.',
         github: 'https://github.com/yourusername/project4',
+        website: 'https://your-project4-demo-link.com',
         learnMore: '/projects/project-4'
       },
       {
         titleTop: 'PROJECT 5',
         category: 'machine-learning',
         img: '/images/image.png',
-        title: 'Project 5 — Computer Vision Image Classifier',
+        title: 'Computer Vision Image Classifier',
+        description: 'Built an image classification workflow to automate visual labeling with strong baseline accuracy.',
         github: 'https://github.com/yourusername/project5',
         learnMore: '/projects/project-5'
       },
@@ -107,15 +161,18 @@ export default function HomePage() {
         titleTop: 'PROJECT 6',
         category: 'data-analysis',
         img: '/images/image.png',
-        title: 'Project 6 — Customer Churn Exploratory Analysis',
+        title: 'Customer Churn Exploratory Analysis',
+        description: 'Explored customer behavior patterns to uncover churn drivers and retention opportunities.',
         github: 'https://github.com/yourusername/project6',
+        website: 'https://your-project6-demo-link.com',
         learnMore: '/projects/project-6'
       },
       {
         titleTop: 'PROJECT 7',
         category: 'generative-ai',
         img: '/images/image.png',
-        title: 'Project 7 — Generative AI Study Assistant',
+        title: 'Generative AI Study Assistant',
+        description: 'Created an AI study assistant to summarize content and generate revision-ready answers.',
         github: 'https://github.com/yourusername/project7',
         learnMore: '/projects/project-7'
       },
@@ -123,7 +180,8 @@ export default function HomePage() {
         titleTop: 'PROJECT 8',
         category: 'data-analysis',
         img: '/images/image.png',
-        title: 'Project 8 — Web Traffic Analytics',
+        title: 'Web Traffic Analytics',
+        description: 'Tracked traffic and engagement metrics to identify funnel drop-offs and improve conversion.',
         github: 'https://github.com/yourusername/project8',
         learnMore: '/projects/project-8'
       },
@@ -131,7 +189,8 @@ export default function HomePage() {
         titleTop: 'PROJECT 9',
         category: 'generative-ai',
         img: '/images/image.png',
-        title: 'Project 9 — RAG Chatbot',
+        title: 'RAG Chatbot',
+        description: 'Implemented a retrieval-augmented chatbot for context-grounded answers from documents.',
         github: 'https://github.com/yourusername/project9',
         learnMore: '/projects/project-9'
       }
@@ -290,34 +349,40 @@ export default function HomePage() {
           <h1 className="heading shrinkInAndOut">MY PROJECTS</h1>
 
           <div className="project-list">
-            {[1, 2, 3].map((n) => (
-              <div className="project-item" key={n}>
+            {topProjects.map((project) => (
+              <div className="project-item" key={project.id}>
                 <div className="project-content">
-                  <h3>Project {n}</h3>
+                  <h3>{project.title}</h3>
                   <div className="project-skills">
-                    <span className="project-skills-btn">HTML</span>
-                    <span className="project-skills-btn">CSS</span>
-                    <span className="project-skills-btn">JavaScript</span>
+                    {project.skills.map((tech) => (
+                      <span
+                        key={tech.name}
+                        className="project-skills-btn project-skill-icon"
+                        title={tech.name}
+                        aria-label={tech.name}
+                      >
+                        <tech.Icon aria-hidden="true" />
+                      </span>
+                    ))}
                   </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta ut nam quam, iste dolor mollitia
-                    eaque, quia distinctio saepe nemo laborum fugiat ad.
-                  </p>
+                  <p>{project.description}</p>
                   <div className="button-container">
-                    <a
-                      href="https://github.com/yourusername/project1"
-                      className="github_btn"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fa-brands fa-github"></i>
-                    </a>
-                    <Link to={`/projects/project-${n}`} className="learn-more-btn">
+                    <div className="project-icon-links">
+                      <a href={project.github} className="github_btn" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-github"></i>
+                      </a>
+                      {project.website && (
+                        <a href={project.website} className="github_btn " target="_blank" rel="noreferrer">
+                          <i className="fa-solid fa-globe"></i>
+                        </a>
+                      )}
+                    </div>
+                    <Link to={project.learnMore} className="learn-more-btn">
                       Learn More
                     </Link>
                   </div>
                 </div>
-                <img src="/images/sample-project-image.jpg" alt={`Project ${n}`} className="project-image" />
+                <img src={project.image} alt={project.title} className="project-image" />
               </div>
             ))}
           </div>
@@ -349,11 +414,19 @@ export default function HomePage() {
                 <img src={p.img} alt="Project" className="project-image2" />
                 <div className="project-details">
                   <h3>{p.title}</h3>
+                  <p className="other-project-description">{p.description}</p>
                   <div className="button-container">
-                    <a href={p.github} className="github_btn" target="_blank" rel="noreferrer">
-                      <i className="fa-brands fa-github"></i>
-                    </a>
-                    <Link to={p.learnMore} className="learn-more-btn">
+                    <div className="project-icon-links">
+                      <a href={p.github} className="github_btn" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-github"></i>
+                      </a>
+                      {p.website && (
+                        <a href={p.website} className="github_btn " target="_blank" rel="noreferrer">
+                          <i className="fa-solid fa-globe"></i>
+                        </a>
+                      )}
+                    </div>
+                    <Link to={p.learnMore} className="learn-more-btn learn-more-btn2">
                       Learn More
                     </Link>
                   </div>

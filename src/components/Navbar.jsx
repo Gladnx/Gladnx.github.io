@@ -127,15 +127,17 @@ export default function Navbar() {
       <div className={`${styles.navMenu} ${menuOpen ? styles.active : ''}`}>
         <ul className={styles.navList}>
           {HomeLinks}
+          <li>
+            <a
+              href="https://drive.google.com/file/d/YOUR_FILE_ID/view"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.navLink}
+            >
+              RESUME
+            </a>
+          </li>
         </ul>
-        <a
-          href="https://drive.google.com/file/d/YOUR_FILE_ID/view"
-          target="_blank"
-          rel="noreferrer"
-          className={styles.navLink}
-        >
-          RESUME
-        </a>
       </div>
 
       <div className={styles.darkModeContainer}>
