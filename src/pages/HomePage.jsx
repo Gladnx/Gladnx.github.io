@@ -142,13 +142,12 @@ export default function HomePage() {
   const otherProjects = useMemo(
     () => [
       {
-        titleTop: 'PROJECT 4',
-        category: 'data-analysis',
-        img: '/images/image.png',
-        title: 'Sales Performance Analysis',
-        description: 'Analyzed sales trends by region and product line to identify growth opportunities.',
-        github: 'https://github.com/Gladnx',
-        website: 'https://your-project4-demo-link.com',
+        titleTop: 'Basel Climate Pattern Clustering Analysis',
+        category: 'machine-learning',
+        img: '/images/project details images/project4/kmeans_output.png',
+        title: 'Basel Climate Pattern Clustering Analysis',
+        description: 'Applied unsupervised machine learning techniques including K-Means, DBSCAN, and Gaussian Mixture Models to identify hidden patterns in climate datasets. Used PCA for dimensionality reduction and visualization to analyse regional climate similarities.',
+        github: 'https://github.com/Gladnx/Basel-Climate-Dataset.git',
         learnMore: '/projects/project-4'
       },
       {
@@ -162,7 +161,7 @@ export default function HomePage() {
       },
       {
         titleTop: 'PROJECT 6',
-        category: 'data-analysis',
+        category: 'deep-learning',
         img: '/images/image.png',
         title: 'Customer Churn Exploratory Analysis',
         description: 'Explored customer behavior patterns to uncover churn drivers and retention opportunities.',
@@ -181,7 +180,7 @@ export default function HomePage() {
       },
       {
         titleTop: 'PROJECT 8',
-        category: 'data-analysis',
+        category: 'deep-learning',
         img: '/images/image.png',
         title: 'Web Traffic Analytics',
         description: 'Tracked traffic and engagement metrics to identify funnel drop-offs and improve conversion.',
@@ -390,12 +389,12 @@ export default function HomePage() {
             ))}
           </div>
 
-          <h1 className="heading2 shrinkInAndOut">OTHER PROJECTS</h1>
+          <h1 id='other-projects' className="heading2 shrinkInAndOut">OTHER PROJECTS</h1>
 
           <div className="filter-buttons">
             {[
               { key: 'all', label: 'All' },
-              { key: 'data-analysis', label: 'DATA ANALYSIS' },
+              { key: 'deep-learning', label: 'DEEP LEARNING' },
               { key: 'machine-learning', label: 'MACHINE LEARNING' },
               { key: 'generative-ai', label: 'GENERATIVE AI' }
             ].map((b) => (

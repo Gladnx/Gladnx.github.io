@@ -51,7 +51,7 @@ export default function ProjectLayout({ toc = [], children }) {
         {children}
 
         <div style={{ marginTop: '2rem', textAlign: 'left' }}>
-          <Link to="/#projects" className="back_btn" style={{ display: 'inline-block' }}>
+          <Link to="/#other-projects" className="back_btn" style={{ display: 'inline-block' }}>
             ← Back to Projects
           </Link>
         </div>
