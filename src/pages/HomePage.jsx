@@ -92,7 +92,7 @@ export default function HomePage() {
         title: 'AI-Enabled Onion Storage Grading System',
         description:
           'Designed an electromechanical + AI workflow to grade onion quality and support better storage decisions, reducing spoilage risk and post-harvest loss.',
-        github: 'https://github.com/yourusername/project1',
+        github: 'https://github.com/Gladnx',
         website: 'https://your-project1-demo-link.com',
         learnMore: '/projects/project-1',
         image: '/images/sample-project-image.jpg',
@@ -107,7 +107,7 @@ export default function HomePage() {
         title: 'Smart Personal Finance Dashboard',
         description:
           'Built a dashboard to clean transaction data, summarize spending behavior, and flag unusual activity with category-level insights and reporting.',
-        github: 'https://github.com/yourusername/project2',
+        github: 'https://github.com/Gladnx',
         website: 'https://your-project2-demo-link.com',
         learnMore: '/projects/project-2',
         image: '/images/sample-project-image.jpg',
@@ -123,7 +123,7 @@ export default function HomePage() {
         title: 'Product Recommender (Similarity Search)',
         description:
           'Implemented a similarity-search recommender using vector representations and ANN indexing concepts to retrieve related products with low latency.',
-        github: 'https://github.com/yourusername/project3',
+        github: 'https://github.com/Gladnx',
         learnMore: '/projects/project-3',
         image: '/images/sample-project-image.jpg',
         skills: [
@@ -144,7 +144,7 @@ export default function HomePage() {
         img: '/images/image.png',
         title: 'Sales Performance Analysis',
         description: 'Analyzed sales trends by region and product line to identify growth opportunities.',
-        github: 'https://github.com/yourusername/project4',
+        github: 'https://github.com/Gladnx',
         website: 'https://your-project4-demo-link.com',
         learnMore: '/projects/project-4'
       },
@@ -154,7 +154,7 @@ export default function HomePage() {
         img: '/images/image.png',
         title: 'Computer Vision Image Classifier',
         description: 'Built an image classification workflow to automate visual labeling with strong baseline accuracy.',
-        github: 'https://github.com/yourusername/project5',
+        github: 'https://github.com/Gladnx',
         learnMore: '/projects/project-5'
       },
       {
@@ -163,7 +163,7 @@ export default function HomePage() {
         img: '/images/image.png',
         title: 'Customer Churn Exploratory Analysis',
         description: 'Explored customer behavior patterns to uncover churn drivers and retention opportunities.',
-        github: 'https://github.com/yourusername/project6',
+        github: 'https://github.com/Gladnx',
         website: 'https://your-project6-demo-link.com',
         learnMore: '/projects/project-6'
       },
@@ -173,7 +173,7 @@ export default function HomePage() {
         img: '/images/image.png',
         title: 'Generative AI Study Assistant',
         description: 'Created an AI study assistant to summarize content and generate revision-ready answers.',
-        github: 'https://github.com/yourusername/project7',
+        github: 'https://github.com/Gladnx',
         learnMore: '/projects/project-7'
       },
       {
@@ -182,7 +182,7 @@ export default function HomePage() {
         img: '/images/image.png',
         title: 'Web Traffic Analytics',
         description: 'Tracked traffic and engagement metrics to identify funnel drop-offs and improve conversion.',
-        github: 'https://github.com/yourusername/project8',
+        github: 'https://github.com/Gladnx',
         learnMore: '/projects/project-8'
       },
       {
@@ -191,7 +191,7 @@ export default function HomePage() {
         img: '/images/image.png',
         title: 'RAG Chatbot',
         description: 'Implemented a retrieval-augmented chatbot for context-grounded answers from documents.',
-        github: 'https://github.com/yourusername/project9',
+        github: 'https://github.com/Gladnx',
         learnMore: '/projects/project-9'
       }
     ],
@@ -456,7 +456,7 @@ export default function HomePage() {
                 >
                   <i className="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/Gladwin-George" target="_blank" rel="noreferrer" className="social-icon">
+                <a href="https://github.com/Gladnx" target="_blank" rel="noreferrer" className="social-icon">
                   <i className="fa-brands fa-github"></i>
                 </a>
                 <a href="mailto:your.gladwingeorge189@gmail.com" className="social-icon">
@@ -498,3 +498,4 @@ export default function HomePage() {
     </>
   )
 }
+

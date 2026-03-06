@@ -61,7 +61,7 @@ export default function Project2() {
       <h2 id="links">Links</h2>
       <ul>
         <li>
-          GitHub: <a href="https://github.com/yourusername/project2">https://github.com/yourusername/project2</a>
+          GitHub: <a href="https://github.com/Gladnx">https://github.com/Gladnx</a>
         </li>
         <li>
           Live Demo: <a href="#">(add your link)</a>
@@ -70,3 +70,4 @@ export default function Project2() {
     </ProjectLayout>
   )
 }
+

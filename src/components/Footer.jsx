@@ -18,7 +18,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/gladwin-george-" target="_blank" rel="noreferrer" className={styles.socialIcon}>
               <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com/Gladwin-George" target="_blank" rel="noreferrer" className={styles.socialIcon}>
+            <a href="https://github.com/Gladnx" target="_blank" rel="noreferrer" className={styles.socialIcon}>
               <i className="fa-brands fa-github"></i>
             </a>
             <a href="mailto:your.gladwingeorge189@gmail.com" className={styles.socialIcon}>
@@ -42,14 +42,14 @@ export default function Footer() {
           <h3>SOCIAL LINKS</h3>
           <ul>
             <li><a href="https://www.linkedin.com/in/gladwin-george-" target="_blank" rel="noreferrer" className={styles.footerLink}>Linkedin</a></li>
-            <li><a href="https://github.com/Gladwin-George" target="_blank" rel="noreferrer" className={styles.footerLink}>Github</a></li>
+            <li><a href="https://github.com/Gladnx" target="_blank" rel="noreferrer" className={styles.footerLink}>Github</a></li>
             <li><a href="mailto:your.gladwingeorge189@gmail.com" className={styles.footerLink}>Gmail</a></li>
           </ul>
         </div>
       </div>
 
       <div className={styles.footerCopyright}>
-        &copy; Gladwin George Portfolio version 1.0 <br /> All rights reserved.
+        Crafted with code by Gladwin George 
       </div>
     </footer>
   )
