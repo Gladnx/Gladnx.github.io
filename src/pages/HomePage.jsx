@@ -153,19 +153,19 @@ export default function HomePage() {
       {
         titleTop: 'Basel Climate Pattern Clustering Analysis',
         category: 'machine-learning',
-        img: '/images/project details images/project4/kmeans_output.png',
+        img: '/images/project details images/project4/project4.png',
         title: 'Basel Climate Pattern Clustering Analysis',
         description: 'Applied unsupervised machine learning techniques including K-Means, DBSCAN, and Gaussian Mixture Models to identify hidden patterns in climate datasets. Used PCA for dimensionality reduction and visualization to analyse regional climate similarities.',
         github: 'https://github.com/Gladnx/Basel-Climate-Dataset.git',
         learnMore: '/projects/project-4'
       },
       {
-        titleTop: 'PROJECT 5',
-        category: 'machine-learning',
-        img: '/images/image.png',
-        title: 'Computer Vision Image Classifier',
-        description: 'Built an image classification workflow to automate visual labeling with strong baseline accuracy.',
-        github: 'https://github.com/Gladnx',
+        titleTop: 'Image processing with deep neural networks',
+        category: 'deep-learning',
+        img: '/images/project details images/project5/project5.png',
+        title: 'Image Processing with Deep Neural Networks',
+        description: 'Explored deep visual representations using DINOv2 embeddings for image understanding. Applied PCA, t-SNE, clustering, and logistic regression to analyze and classify Cats vs Dogs and Oxford-IIIT Pets datasets.',
+        github: 'https://github.com/Gladnx/Image-Processing-with-Deep-Neural-Networks.git',
         learnMore: '/projects/project-5'
       },
       {
@@ -326,7 +326,7 @@ export default function HomePage() {
                 { name: 'Streamlit', Icon: SiStreamlit },
                 { name: 'Jupyter Notebook', Icon: SiJupyter },
                 { name: 'Google Colab', Icon: SiGooglecolab },
-                { name: 'Gemini', Icon: SiGooglegemini }
+                { name: 'Gemini API', Icon: SiGooglegemini }
               ]
             },
             {
