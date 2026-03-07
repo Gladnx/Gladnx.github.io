@@ -10,6 +10,7 @@ import {
   SiGithub,
   SiGitlab,
   SiGooglecolab,
+  SiGooglegemini,
   SiHtml5,
   SiJavascript,
   SiMysql,
@@ -26,7 +27,8 @@ import {
   SiTensorflow,
   SiJupyter,
   SiApachespark,
-  SiPython
+  SiPython,
+  SiVercel
 } from 'react-icons/si'
 import { PiMicrosoftExcelLogoFill } from 'react-icons/pi'
 
@@ -123,16 +125,23 @@ export default function HomePage() {
       },
       {
         id: 3,
-        title: 'Product Recommender (Similarity Search)',
+        title: 'AI powered code Logic Explainer',
         description:
-          'Implemented a similarity-search recommender using vector representations and ANN indexing concepts to retrieve related products with low latency.',
-        github: 'https://github.com/Gladnx',
+          'An AI-powered developer tool that analyzes source code and converts complex programming logic into clear, human-readable explanations. By leveraging large language models, the system helps students and developers quickly understand unfamiliar code, improve learning, and accelerate debugging and documentation workflows.',
+        github: 'https://github.com/Gladnx/AI-code-logic-explainer.git',
+        website: 'https://ai-code-logic-explainer.vercel.app',
         learnMore: '/projects/project-3',
-        image: '/images/sample-project-image.jpg',
+        image: '/images/project details images/project3/project3.png',
         skills: [
-          { name: 'Python', Icon: SiPython },
-          { name: 'NumPy', Icon: SiNumpy },
-          { name: 'Scikit-learn', Icon: SiScikitlearn }
+          { name: 'HTML', Icon: SiHtml5 },
+          { name: 'CSS', Icon: SiCss },
+          { name: 'Tailwind CSS', Icon: SiTailwindcss },
+          { name: 'JavaScript', Icon: SiJavascript },
+          { name: 'React', Icon: SiReact },
+          { name: 'Gemini API', Icon: SiGooglegemini },
+          { name: 'Postman', Icon: SiPostman },
+          { name: 'GitHub', Icon: SiGithub },
+          { name: 'Vercel', Icon: SiVercel }
         ]
       }
     ],
@@ -316,7 +325,8 @@ export default function HomePage() {
                 { name: 'Apache Spark', Icon: SiApachespark },
                 { name: 'Streamlit', Icon: SiStreamlit },
                 { name: 'Jupyter Notebook', Icon: SiJupyter },
-                { name: 'Google Colab', Icon: SiGooglecolab }
+                { name: 'Google Colab', Icon: SiGooglecolab },
+                { name: 'Gemini', Icon: SiGooglegemini }
               ]
             },
             {
@@ -327,7 +337,8 @@ export default function HomePage() {
                 { name: 'GitLab', Icon: SiGitlab },
                 { name: 'Docker', Icon: SiDocker },
                 { name: 'Anaconda', Icon: SiAnaconda },
-                { name: 'Postman', Icon: SiPostman }
+                { name: 'Postman', Icon: SiPostman },
+                { name: 'Vercel', Icon: SiVercel }
               ]
             }
           ].map((s) => (
@@ -389,7 +400,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <h1 id='other-projects' className="heading2 shrinkInAndOut">OTHER PROJECTS</h1>
+          <h1 id='other-projects' className="heading2 shrinkInAndOut">MORE PROJECTS</h1>
 
           <div className="filter-buttons">
             {[
