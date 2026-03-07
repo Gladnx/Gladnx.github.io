@@ -89,21 +89,21 @@ export default function HomePage() {
 
     const topProjects = useMemo(
     () => [
-      {
-        id: 1,
-        title: 'AI-Enabled Onion Storage Grading System',
-        description:
-          'Designed an electromechanical + AI workflow to grade onion quality and support better storage decisions, reducing spoilage risk and post-harvest loss.',
-        github: 'https://github.com/Gladnx',
-        website: 'https://your-project1-demo-link.com',
-        learnMore: '/projects/project-1',
-        image: '/images/sample-project-image.jpg',
-        skills: [
-          { name: 'Python', Icon: SiPython },
-          { name: 'OpenCV / CV', Icon: SiJupyter },
-          { name: 'TensorFlow', Icon: SiTensorflow }
-        ]
-      },
+      // {
+      //   id: 1,
+      //   title: 'AI-Enabled Onion Storage Grading System',
+      //   description:
+      //     'Designed an electromechanical + AI workflow to grade onion quality and support better storage decisions, reducing spoilage risk and post-harvest loss.',
+      //   github: 'https://github.com/Gladnx',
+      //   website: 'https://your-project1-demo-link.com',
+      //   learnMore: '/projects/project-1',
+      //   image: '/images/sample-project-image.jpg',
+      //   skills: [
+      //     { name: 'Python', Icon: SiPython },
+      //     { name: 'OpenCV / CV', Icon: SiJupyter },
+      //     { name: 'TensorFlow', Icon: SiTensorflow }
+      //   ]
+      // },
       {
         id: 2,
         title: 'AI software to detect harmful ingredients in packaged food products and beverages',
@@ -167,44 +167,44 @@ export default function HomePage() {
         description: 'Explored deep visual representations using DINOv2 embeddings for image understanding. Applied PCA, t-SNE, clustering, and logistic regression to analyze and classify Cats vs Dogs and Oxford-IIIT Pets datasets.',
         github: 'https://github.com/Gladnx/Image-Processing-with-Deep-Neural-Networks.git',
         learnMore: '/projects/project-5'
-      },
-      {
-        titleTop: 'PROJECT 6',
-        category: 'deep-learning',
-        img: '/images/image.png',
-        title: 'Customer Churn Exploratory Analysis',
-        description: 'Explored customer behavior patterns to uncover churn drivers and retention opportunities.',
-        github: 'https://github.com/Gladnx',
-        website: 'https://your-project6-demo-link.com',
-        learnMore: '/projects/project-6'
-      },
-      {
-        titleTop: 'PROJECT 7',
-        category: 'generative-ai',
-        img: '/images/image.png',
-        title: 'Generative AI Study Assistant',
-        description: 'Created an AI study assistant to summarize content and generate revision-ready answers.',
-        github: 'https://github.com/Gladnx',
-        learnMore: '/projects/project-7'
-      },
-      {
-        titleTop: 'PROJECT 8',
-        category: 'deep-learning',
-        img: '/images/image.png',
-        title: 'Web Traffic Analytics',
-        description: 'Tracked traffic and engagement metrics to identify funnel drop-offs and improve conversion.',
-        github: 'https://github.com/Gladnx',
-        learnMore: '/projects/project-8'
-      },
-      {
-        titleTop: 'PROJECT 9',
-        category: 'generative-ai',
-        img: '/images/image.png',
-        title: 'RAG Chatbot',
-        description: 'Implemented a retrieval-augmented chatbot for context-grounded answers from documents.',
-        github: 'https://github.com/Gladnx',
-        learnMore: '/projects/project-9'
       }
+      // {
+      //   titleTop: 'PROJECT 6',
+      //   category: 'deep-learning',
+      //   img: '/images/image.png',
+      //   title: 'Customer Churn Exploratory Analysis',
+      //   description: 'Explored customer behavior patterns to uncover churn drivers and retention opportunities.',
+      //   github: 'https://github.com/Gladnx',
+      //   website: 'https://your-project6-demo-link.com',
+      //   learnMore: '/projects/project-6'
+      // },
+      // {
+      //   titleTop: 'PROJECT 7',
+      //   category: 'generative-ai',
+      //   img: '/images/image.png',
+      //   title: 'Generative AI Study Assistant',
+      //   description: 'Created an AI study assistant to summarize content and generate revision-ready answers.',
+      //   github: 'https://github.com/Gladnx',
+      //   learnMore: '/projects/project-7'
+      // },
+      // {
+      //   titleTop: 'PROJECT 8',
+      //   category: 'deep-learning',
+      //   img: '/images/image.png',
+      //   title: 'Web Traffic Analytics',
+      //   description: 'Tracked traffic and engagement metrics to identify funnel drop-offs and improve conversion.',
+      //   github: 'https://github.com/Gladnx',
+      //   learnMore: '/projects/project-8'
+      // },
+      // {
+      //   titleTop: 'PROJECT 9',
+      //   category: 'generative-ai',
+      //   img: '/images/image.png',
+      //   title: 'RAG Chatbot',
+      //   description: 'Implemented a retrieval-augmented chatbot for context-grounded answers from documents.',
+      //   github: 'https://github.com/Gladnx',
+      //   learnMore: '/projects/project-9'
+      // }
     ],
     []
   )
@@ -284,7 +284,7 @@ export default function HomePage() {
               Alongside my studies, I volunteer at the <span className="aboutme-highlight">British Heart Foundation</span>, where I support community-driven initiatives and gain valuable experience working with diverse teams while contributing to meaningful social impact.
             </p>
 
-            <a href="/files/Gladwin George Resume.pdf" className="btn" download>
+            <a href="/files/Gladwin George.pdf" className="btn" download>
               Resume
             </a>
             <a href="#contact" className="btn secondary-btn">
@@ -406,8 +406,8 @@ export default function HomePage() {
             {[
               { key: 'all', label: 'All' },
               { key: 'deep-learning', label: 'DEEP LEARNING' },
-              { key: 'machine-learning', label: 'MACHINE LEARNING' },
-              { key: 'generative-ai', label: 'GENERATIVE AI' }
+              { key: 'machine-learning', label: 'MACHINE LEARNING' }
+              // { key: 'generative-ai', label: 'GENERATIVE AI' }
             ].map((b) => (
               <button
                 key={b.key}
