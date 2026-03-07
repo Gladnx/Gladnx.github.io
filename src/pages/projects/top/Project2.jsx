@@ -21,7 +21,6 @@ export default function Project2() {
       <p>
         This project is an AI-powered system designed to identify potentially harmful ingredients in packaged food items and beverages. Many consumers find it difficult to understand long ingredient lists printed on product packaging. The application simplifies this process by using Optical Character Recognition (OCR) to extract ingredient text directly from product labels and applying machine learning techniques to analyze those ingredients. The system then highlights ingredients that may contain harmful additives, preservatives, or allergens, helping users make more informed and healthier food choices.
       </p>
-      <br />
       <h2 id="tech">Tech Stack</h2>
       <ul>
         <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
@@ -70,8 +69,9 @@ export default function Project2() {
 
       <li><strong>Doctor Confirmation</strong> - For added reliability, I also added an option for users to consult with a healthcare professional or nutritionist for personalized advice based on their health conditions and dietary needs.</li>
       </ol>
-      
-      This solution provides a fast, automated, and user-friendly way to evaluate packaged food ingredients.
+      <p>
+      This solution provides a fast, automated, and user-friendly way to evaluate packaged food ingredients. It empowers consumers to make healthier choices and increases awareness about food additives and their potential health impacts.
+      </p>
       <br />
       <br />
       
@@ -87,7 +87,7 @@ export default function Project2() {
         <li>Improve consumer awareness about food additives and preservatives.</li>
       </ul>
       <p>
-        The project shows how <strong>AI and OCR can work together to build practical health-focused tools</strong>
+        The project shows how <strong>AI and OCR can work together to build practical health-focused tools </strong>
         that assist consumers in making safer food choices.
       </p>
       <br />
@@ -95,27 +95,27 @@ export default function Project2() {
       <h2 id="next">Next Improvements</h2>
       <ul>
       <li>
-        <strong>Mobile App Integration:</strong>
+        <strong>Mobile App Integration: </strong>
         Allow users to scan food labels in real time using a smartphone camera.
       </li>
       <li>
-        <strong>Expanded Ingredient Database:</strong>
+        <strong>Expanded Ingredient Database: </strong>
         Include more global food additives and health risk classifications.
       </li>
       <li>
-        <strong>Nutritional Analysis:</strong>
+        <strong>Nutritional Analysis: </strong>
         Combine ingredient analysis with nutritional information such as sugar, sodium, and fat levels.
       </li>
       <li>
-        <strong>Health Personalization:</strong>
+        <strong>Health Personalization: </strong>
         Provide warnings based on user-specific conditions such as allergies, diabetes, or dietary preferences.
       </li>
       <li>
-        <strong>Deep Learning for OCR Accuracy:</strong>
+        <strong>Deep Learning for OCR Accuracy: </strong>
         Improve text extraction accuracy for complex or low-quality images.
       </li>
       <li>
-        <strong>Barcode Integration:</strong>
+        <strong>Barcode Integration: </strong>
         Fetch ingredient data automatically using product barcode scanning.
       </li>
       </ul>

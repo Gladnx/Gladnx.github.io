@@ -37,8 +37,6 @@ export default function Project4() {
         and Gaussian Mixture Models. The goal was to evaluate how different clustering
         methods capture structure within real-world climate data.
       </p>
-      <br />
-
 
       <h2 id="dataset">Dataset</h2>
 
@@ -250,7 +248,7 @@ export default function Project4() {
         Different values of <strong>k</strong> were tested to determine the optimal
         number of clusters. Evaluation metrics such as the silhouette score were used
         to measure how well separated the clusters were. The analysis showed that
-        <strong>k = 2</strong> provided the best separation of the climate data,
+        <strong> k = 2</strong> provided the best separation of the climate data,
         indicating that the observations naturally form two broad groups.
       </p>
 
@@ -323,7 +321,7 @@ export default function Project4() {
 
       <p>
         Several model configurations were tested, and the final model used
-        <strong>7 components</strong> with a <strong>spherical covariance</strong>
+        <strong> 7 components</strong> with a <strong>spherical covariance </strong>
         structure. This configuration allowed the model to capture more complex
         relationships in the dataset and represent overlapping clusters that may
         correspond to gradual transitions between climate conditions.

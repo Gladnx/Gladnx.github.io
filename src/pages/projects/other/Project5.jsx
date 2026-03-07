@@ -30,9 +30,9 @@ export default function Project5() {
         categories.
       </p>
       <p>
-        The project includes two main experiments. The first uses a <strong>Cats vs Dogs</strong>
+        The project includes two main experiments. The first uses a <strong>Cats vs Dogs </strong>
         dataset to study binary class separation, clustering behaviour, and simple linear
-        classification on top of deep embeddings. The second uses the <strong>Oxford-IIIT Pets</strong>
+        classification on top of deep embeddings. The second uses the <strong>Oxford-IIIT Pets </strong>
         dataset to explore fine-grained multi-class image representation learning across pet
         breeds. Together, these experiments demonstrate how pretrained visual embeddings can
         support feature extraction, dimensionality reduction, clustering, and classification.
@@ -137,7 +137,7 @@ export default function Project5() {
       <p>
         After extraction, the feature vectors were prepared for downstream learning.
         In some experiments, the embeddings were <strong>standardised</strong> so that each
-        feature dimension had a comparable scale. In others, they were <strong>L2-normalised</strong>
+        feature dimension had a comparable scale. In others, they were <strong>L2-normalised </strong>
         so that comparisons depended more on the direction of the embedding than on its raw
         magnitude. This was particularly useful for clustering and distance-based analysis.
       </p>

@@ -6,7 +6,7 @@ export default function Project3() {
     <ProjectLayout
       afterBackSpace={220}
       toc={[
-        ['heading', 'Overview'],
+        ['overview', 'Overview'],
         ['problem', 'Problem'],
         ['idea', 'Project Idea / Workflow'],
         ['features', 'Key Features'],
@@ -19,7 +19,7 @@ export default function Project3() {
       <h3 id='heading' className="specific-heading">AI CODE LOGIC EXPLAINER</h3>
       <br />
 
-      <h2 >Overview</h2>
+      <h2 id="overview">Overview</h2>
       <p>
         AI Code Logic Explainer is an intelligent developer support tool built to help
         users understand code more easily. Instead of only showing raw source code,
