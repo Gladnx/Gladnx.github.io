@@ -1,108 +1,38 @@
 .footer {
   background: var(--primary-color-gradient);
   color: var(--primary-text-color);
-  padding: 20px 20px 10px 20px;
-  font-family: 'Arial', sans-serif;
-  overflow: hidden;
-}
-
-.footerContent {
+  padding: 24px 20px 14px;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.footerColumn {
-  flex: 1;
-  padding: 0 15px;
-  text-align: left;
-}
-
-.footerColumn:nth-child(1) {
-  flex: 1 1 25%;
-}
-
-.footerColumn:nth-child(2),
-.footerColumn:nth-child(3) {
-  border-left: 2px solid var(--primary-text-color);
-  flex: 1 1 10%;
-}
-
-.brand {
-  font-size: 50px;
-}
-
-.brand:hover {
-  color: var(--dark-blue-color);
-}
-
-.footerColumn h3 {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
-
-.footerColumn ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footerColumn:nth-child(2) ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
-.footerColumn ul li {
-  margin-bottom: 10px;
-}
-
-.footerLink {
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: normal;
-  transition: transform 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
-  display: inline-block;
-  transform-origin: left;
-}
-
-.footerLink:hover {
-  transform: scale(1.875);
-  font-weight: bold;
-  color: var(--dark-blue-color);
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  overflow: hidden;
 }
 
 .socialContact {
   display: flex;
-  gap: 14px;
+  width: 100%;
+  gap: 16px;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .socialIcon {
   color: var(--primary-text-color);
-  font-size: 28px;
+  font-size: 24px;
   text-decoration: none;
-  transition: transform 0.25s ease;
+  opacity: 0.92;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .socialIcon:hover {
-  transform: translateY(-2px) scale(1.05);
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .footerCopyright {
   text-align: center;
   font-size: 14px;
-}
-
-@media screen and (max-width: 768px) {
-  .footerColumn:nth-child(1) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 857px) {
-  .footerColumn h1 {
-    font-size: 30px;
-  }
+  letter-spacing: 0.3px;
 }

@@ -16,7 +16,6 @@ import {
   SiMysql,
   SiNodedotjs,
   SiNumpy,
-  SiOpenjdk,
   SiPandas,
   SiPlotly,
   SiPostman,
@@ -30,6 +29,7 @@ import {
   SiPython,
   SiVercel
 } from 'react-icons/si'
+import { FaJava } from 'react-icons/fa'
 import { PiMicrosoftExcelLogoFill } from 'react-icons/pi'
 
 import Navbar from '../components/Navbar.jsx'
@@ -284,7 +284,12 @@ export default function HomePage() {
               Alongside my studies, I volunteer at the <span className="aboutme-highlight">British Heart Foundation</span>, where I support community-driven initiatives and gain valuable experience working with diverse teams while contributing to meaningful social impact.
             </p>
 
-            <a href="/files/Gladwin George.pdf" className="btn" download>
+            <a
+              href="https://drive.google.com/file/d/118Jc038ZP-KypwzxPQRVCShmHDq2i-Rd/view?usp=sharing"
+              className="btn"
+              target="_blank"
+              rel="noreferrer"
+            >
               Resume
             </a>
             <a href="#contact" className="btn secondary-btn">
@@ -302,7 +307,7 @@ export default function HomePage() {
               title: 'Programming & Development',
               items: [
                 { name: 'Python', Icon: SiPython },
-                { name: 'Java', Icon: SiOpenjdk },
+                { name: 'Java', Icon: FaJava },
                 { name: 'JavaScript', Icon: SiJavascript },
                 { name: 'HTML', Icon: SiHtml5 },
                 { name: 'CSS', Icon: SiCss },

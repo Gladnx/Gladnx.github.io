@@ -44,10 +44,13 @@
   list-style: none;
   display: flex;
   gap: 6px;
+  align-items: center;
 }
 
 .navList>li {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .navLink {
@@ -85,6 +88,26 @@
   border-bottom-color: #0066ff;
   background: rgba(92, 152, 241, 0.10);
   border-radius: 4px;
+}
+
+.resumeButton {
+  font-size: medium;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 8px 15px;
+  background: var(--primary-color-gradient);
+  transition: transform 0.2s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.resumeButton:hover {
+  color: #ffffff;
+  background: var(--primary-color-gradient);
+  transform: translateY(-1px);
+  filter: saturate(1.08);
+}
+
+.resumeButton:active {
+  transform: translateY(0);
 }
 
 .navContainer {
@@ -237,6 +260,12 @@
   .navLink {
     font-size: 1.5rem;
     color: white;
+  }
+
+  .resumeButton {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1.25rem;
   }
 
   .darkModeContainer {

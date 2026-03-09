@@ -132,7 +132,7 @@ export default function Navbar() {
               href="https://drive.google.com/file/d/118Jc038ZP-KypwzxPQRVCShmHDq2i-Rd/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className={styles.navLink}
+              className={`${styles.navLink} ${styles.resumeButton}`}
             >
               RESUME
             </a>
