@@ -5,112 +5,137 @@ export default function Project1() {
   return (
     <ProjectLayout
       toc={[
-        ['introduction', 'Introduction'],
-        ['general-description', 'General Description'],
-        ['existing-technology', 'Existing Technology'],
-        ['drawbacks', 'Drawbacks/Challenges'],
-        ['proposed-invention', 'Proposed Invention'],
-        ['advantages', 'Advantages']
+        ['overview', 'Overview'],
+        ['problem', 'Problem'],
+        ['solution', 'Solution'],
+        ['features', 'Key Features'],
+        ['tech', 'Tech Stack'],
+        ['workflow', 'User Flow'],
+        ['impact', 'Why It Matters'],
+        ['next', 'Next Improvements'],
+        ['links', 'Links']
       ]}
     >
-      <h3 className="specific-heading">
-        SYSTEM AND METHOD FOR AUTOMATICALLY GRADING STORAGE OF ONIONS USING AN ARTIFICIAL-INTELLIGENCE ENABLED
-        ELECTROMECHANICAL PROCESS
-      </h3>
+      <h3 className="specific-heading">PrepAA: AI Mock Interview Assistant</h3>
       <br />
 
-      <h2 id="introduction">Introduction</h2>
+      <h2 id="overview">Overview</h2>
       <p>
-        Farmers are facing a large number of onions loss during the post-production of onions due to poor storage
-        management. Although the traditional method of making onion husks saves money, the loss of onions in this storage
-        is huge and these storages are not economically viable for long period. We designed this storage system to
-        overcome this storage problem and avoid the wastage of onions during the storage period.
+        PrepAA is a web-based AI mock interview assistant built to make interview preparation more practical,
+        interactive, and repeatable. Instead of relying only on static question lists, the platform gives users a
+        guided interview style experience where they can practise answering role relevant questions.
+      </p>
+      <p>
+        The project focuses on helping students, fresh graduates, and job seekers prepare with more structure before
+        real interviews. It turns preparation into an active workflow: choose a target role, start a mock session,
+        respond to prompts, and review feedback to identify weak areas before the actual interview.
       </p>
       <br />
 
-      <h2 id="general-description">General Description</h2>
+      <h2 id="problem">Problem</h2>
       <p>
-        This system first uses an improved traditional grading System to separate a large number of onions based on their
-        Size. After onion size grading, the system will predict the quality of Onions through an image processing
-        algorithm. Farmers can use this system to divide a large number of onions in less time.
-        <br />
-        <br />
-        The system ensures good-quality onions are stored in cold storage and poor-quality onions are either separated or
-        used for different purposes. This system helps economic gain by reducing sprouting Losses, which could be as high
-        as 10 – 15%.
+        Interview preparation is often inconsistent and difficult to personalise. Many candidates depend on generic
+        online question banks, scattered notes, or one-time peer practice. That usually creates three gaps:
+      </p>
+      <ul>
+        <li>Practice is not realistic enough to simulate interview pressure or flow.</li>
+        <li>Users do not get immediate feedback on the quality of their answers.</li>
+        <li>Preparation is hard to repeat consistently across different roles or topics.</li>
+      </ul>
+      <p>
+        PrepAA addresses this by providing an accessible, browser-based assistant that encourages regular practice with a more interview-like experience.
       </p>
       <br />
 
-      <h2 id="existing-technology">Existing Technology</h2>
+      <h2 id="solution">Solution</h2>
       <p>
-        Onion, a widely consumed vegetable across the country throughout the year, is mainly cultivated in three seasons
-        i.e., during Kharif, late kharif, and rabi. The crop harvested during the rabi accounts for 60% of onion
-        production and hits the markets from March to June.
-        <br />
-        <br />
-        In India there are different types of storage structures based on cost and need, they are Naturally ventilated
-        structures, low-cost thatched roof storage, bottom and side ventilated storage structure, and cold storage
-        structure.
+        The solution is an AI-powered mock interview workflow that helps users practise more deliberately. PrepAA
+        supports interview preparation by generating relevant prompts, guiding the user through a mock session, and
+        returning feedback that helps improve answer quality over time.
       </p>
+      <p>
+        This makes the experience more useful than simply reading model answers. Users can actively rehearse,
+        understand where they need improvement, and return for repeated practice until they feel more prepared.
+      </p>
+      <br />
 
-      <img
-        src="/images/project%20details%20images/image.png"
-        className="learn_more_image"
-        alt="Bamboo Hut Storage"
-      />
-      <div className="image-caption">Figure 1: Bamboo Hut Storage</div>
+      <h2 id="features">Key Features</h2>
+      <ul>
+        <li>AI-assisted mock interview sessions for structured practice.</li>
+        <li>Role-focused question generation to keep preparation relevant.</li>
+        <li>Voice-based interaction using browser speech recognition and text-to-speech.</li>
+        <li>Immediate feedback that helps users refine clarity, structure, and confidence.</li>
+        <li>Session history with interview transcripts and feedback.</li>
+        <li>Simple web interface that makes interview practice easy to start and repeat.</li>
+      </ul>
+      <br />
 
-      <img
-        src="/images/project%20details%20images/image.png"
-        className="learn_more_image"
-        alt="Onion Cold Storage"
-      />
-      <div className="image-caption">Figure 2: Onion Cold Storage</div>
+      <h2 id="tech">Tech Stack</h2>
+      <ul>
+        <li><strong>Frontend:</strong> React 19, Vite, React Router</li>
+        <li><strong>Styling:</strong> Tailwind CSS</li>
+        <li><strong>Authentication:</strong> Clerk</li>
+        <li><strong>Database:</strong> Supabase (PostgreSQL)</li>
+        <li><strong>AI Model:</strong> Groq API for generating interview questions and feedback</li>
+        <li><strong>Voice Interaction:</strong> Browser Web Speech API (SpeechRecognition & SpeechSynthesis)</li>
+        <li><strong>Resume Parsing:</strong> pdfjs-dist for client-side PDF text extraction</li>
+        <li><strong>Deployment:</strong> Vercel</li>
+      </ul>
+      <br />
 
-      <h2 id="drawbacks">Drawbacks / Problems / Challenges in the Existing System</h2>
+      <h2 id="workflow">User Flow</h2>
       <ol>
-        <li>Low storage duration of onions due to improper temperature control</li>
-        <li>Durability and strength of the storage structure</li>
-        <li>Can’t identify the present condition of the onions stored in the storage</li>
-        <li>Can’t separate the bad onions stored in a large number of onions as they can affect other onions</li>
+        <li>The user signs in and opens the PrepAA dashboard.</li>
+        <li>The user selects a target job role for the mock interview.</li>
+        <li>An optional resume upload allows the system to personalise interview questions.</li>
+        <li>The AI generates questions and conducts a voice-based mock interview session.</li>
+        <li>The user answers each question using the microphone.</li>
+        <li>The user can review past sessions and repeat practice.</li>
       </ol>
       <br />
 
-      <h2 id="proposed-invention">Proposed Invention</h2>
+      <h2 id="impact">Why It Matters</h2>
       <p>
-        The proposed invention is designed to save time, improve rural storage Infrastructure, and save poor-quality
-        products that have high chances of degradation.
-        <br />
-        <br />
-        Then, the stored onions in each rotator motor box are scanned through the real-time thermal camera and sensors to
-        identify the quality of the onions.
+        PrepAA turns vague interview preparation into a repeatable training loop. It helps users move beyond passive
+        reading and into active rehearsal, which is usually where confidence and communication improve the most.
       </p>
-
-      <div className="image-row">
-        <div className="image-container">
-          <img
-            src="/images/project%20details%20images/image.png"
-            alt="Storage design 01"
-            className="learn_more_image2"
-          />
-          <div className="image-caption">Figure 3: Storage design 01</div>
-        </div>
-        <div className="image-container">
-          <img
-            src="/images/project%20details%20images/image.png"
-            alt="Storage design 02"
-            className="learn_more_image2"
-          />
-          <div className="image-caption">Figure 4: Storage design 02</div>
-        </div>
-      </div>
-
-      <h2 id="advantages">Advantages</h2>
       <ul>
-        <li>Reduces post-harvest onion losses by separating defective onions before storage.</li>
-        <li>Improves grading speed and consistency using sensors + AI.</li>
-        <li>Helps farmers make better storage decisions and reduce spoilage.</li>
+        <li>Supports more consistent interview practice.</li>
+        <li>Helps users identify weak answers before real interviews.</li>
+        <li>Improves confidence through repetition and feedback.</li>
+        <li>Makes interview preparation more accessible for independent learners.</li>
       </ul>
+      <br />
+
+      <h2 id="next">Next Improvements</h2>
+      <ul>
+        <li>Add detailed scoring dashboards to track improvement.</li>
+        <li>Expand personalisation with company-specific interview modes.</li>
+        <li>Introduce AI coaching tips during practice sessions.</li>
+        <li>Add more job roles and technical interview categories.</li>
+      </ul>
+      <br />
+
+      <div className="project-links-icons" id="links">
+        <a
+          href="https://github.com/Gladnx/ai-interview-preparation-assistant"
+          target="_blank"
+          rel="noreferrer"
+          className="project-link-icon"
+          aria-label="GitHub"
+        >
+          <i className="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://prepaa.vercel.app"
+          target="_blank"
+          rel="noreferrer"
+          className="project-link-icon"
+          aria-label="Website"
+        >
+          <i className="fa-solid fa-globe"></i>
+        </a>
+      </div>
     </ProjectLayout>
   )
 }

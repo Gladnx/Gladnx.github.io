@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 import {
   SiAnaconda,
+  SiClerk,
   SiCss,
   SiDocker,
   SiFlask,
@@ -22,6 +23,7 @@ import {
   SiReact,
   SiScikitlearn,
   SiStreamlit,
+  SiSupabase,
   SiTailwindcss,
   SiTensorflow,
   SiJupyter,
@@ -29,7 +31,7 @@ import {
   SiPython,
   SiVercel
 } from 'react-icons/si'
-import { FaJava } from 'react-icons/fa'
+import { FaBolt, FaJava } from 'react-icons/fa'
 import { PiMicrosoftExcelLogoFill } from 'react-icons/pi'
 
 import Navbar from '../components/Navbar.jsx'
@@ -89,21 +91,25 @@ export default function HomePage() {
 
     const topProjects = useMemo(
     () => [
-      // {
-      //   id: 1,
-      //   title: 'AI-Enabled Onion Storage Grading System',
-      //   description:
-      //     'Designed an electromechanical + AI workflow to grade onion quality and support better storage decisions, reducing spoilage risk and post-harvest loss.',
-      //   github: 'https://github.com/Gladnx',
-      //   website: 'https://your-project1-demo-link.com',
-      //   learnMore: '/projects/project-1',
-      //   image: '/images/sample-project-image.jpg',
-      //   skills: [
-      //     { name: 'Python', Icon: SiPython },
-      //     { name: 'OpenCV / CV', Icon: SiJupyter },
-      //     { name: 'TensorFlow', Icon: SiTensorflow }
-      //   ]
-      // },
+      {
+        id: 1,
+        title: 'PrepAA: AI Mock Interview Assistant',
+        description:
+          'A full stack AI web application that simulates realistic job interviews using voice interaction. Users can select a role, upload their resume, and participate in an AI driven mock interview where questions are generated dynamically using the Groq API. The platform uses browser speech recognition and text to speech for live voice conversations and provides detailed AI interview to help users improve their interview performance.',
+        github: 'https://github.com/Gladnx/ai-interview-preparation-assistant',
+        website: 'https://prepaa.vercel.app',
+        learnMore: '/projects/project-1',
+        image: '/images/project details images/project1/project1.png',
+        skills: [
+          { name: 'React', Icon: SiReact },
+          { name: 'Tailwind CSS', Icon: SiTailwindcss },
+          { name: 'Supabase (PostgreSQL)', Icon: SiSupabase },
+          { name: 'Groq API / LLM', Icon: FaBolt },
+          { name: 'Clerk Auth', Icon: SiClerk },
+          { name: "Vercel", Icon: SiVercel },
+          { name: 'GitHub', Icon: SiGithub }
+        ]
+      },
       {
         id: 2,
         title: 'AI software to detect harmful ingredients in packaged food products and beverages',
@@ -330,8 +336,7 @@ export default function HomePage() {
                 { name: 'Apache Spark', Icon: SiApachespark },
                 { name: 'Streamlit', Icon: SiStreamlit },
                 { name: 'Jupyter Notebook', Icon: SiJupyter },
-                { name: 'Google Colab', Icon: SiGooglecolab },
-                { name: 'Gemini API', Icon: SiGooglegemini }
+                { name: 'Google Colab', Icon: SiGooglecolab }
               ]
             },
             {
@@ -341,7 +346,10 @@ export default function HomePage() {
                 { name: 'GitHub', Icon: SiGithub },
                 { name: 'GitLab', Icon: SiGitlab },
                 { name: 'Docker', Icon: SiDocker },
-                { name: 'Anaconda', Icon: SiAnaconda },
+                { name: 'Gemini API', Icon: SiGooglegemini },
+                { name: 'Supabase', Icon: SiSupabase },
+                { name: 'Groq API / LLM', Icon: FaBolt },
+                { name: 'Clerk Auth', Icon: SiClerk },
                 { name: 'Postman', Icon: SiPostman },
                 { name: 'Vercel', Icon: SiVercel }
               ]
